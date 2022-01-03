@@ -1,0 +1,40 @@
+// COLORS
+$main-color: #2f3035;
+$accent-color: #1c62cd;
+$base-color: #f0f0f4;
+$dark-grey: #bdbec2;
+$light-grey: #c4c4c4;
+$white: #fff;
+$black: #000;
+
+// END COLORS
+
+// === FONTS ===
+%sf-pro-regular {
+  font-family: 'SFProDisplay-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%sf-pro-medium {
+  font-family: 'SFProDisplay-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%sf-pro-semibold {
+  font-family: 'SFProDisplay-Semibold', sans-serif;
+  font-weight: 600;
+}
+
+%sf-pro-bold {
+  font-family: 'SFProDisplay-Bold', sans-serif;
+  font-weight: 700;
+}
+
+$secondary-font: 'Barlow', sans-serif;
+// === / FONTS ===
+
+// === TRANSITION ===
+$trans-fast: 0.3s;
+$trans-regular: 0.5s;
+$trans-slow: 0.7s;
+// === / TRANSITION ===
