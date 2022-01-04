@@ -1,4 +1,10 @@
 $(function () {
+  // === [all pages] Burger Menu ===
+  $('.menu__btn').on('click', function () {
+    $('.menu__mobile-list').toggleClass('menu__mobile-list--active');
+  });
+  // === / [all pages] Burger Menu ===
+
   // === [product-page.html] RateYo JQ (star rating) ===
   $('.rate-yo').rateYo({
     readOnly: true,
@@ -9,6 +15,7 @@ $(function () {
     spacing: '7px',
   });
   // === / [product-page.html] RateYo JQ (star rating) ===
+
   $('.banner-section__slider').slick({
     dots: true,
     prevArrow:

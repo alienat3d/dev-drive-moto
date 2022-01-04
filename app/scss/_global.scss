@@ -34,11 +34,18 @@ p {
   margin: 0;
 }
 
+address {
+  font-style: normal;
+}
+
 body {
-  color: $main-color;
+  overflow-x: hidden;
+  min-width: 320px;
+
   @extend %sf-pro-regular;
   font-size: 20px;
   line-height: 24px;
+  color: $main-color;
 }
 
 .container {

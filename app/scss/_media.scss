@@ -1,0 +1,40 @@
+// === [MAX-WIDTH <= 1100px] ===
+@media (max-width: 1100px) {
+  .menu__item + .menu__item {
+    padding-left: 20px;
+  }
+
+  .header__address {
+    margin-right: 15px;
+  }
+}
+// === / [MAX-WIDTH <= 1100px] ===
+
+// === [MAX-WIDTH <= 962px] ===
+@media (max-width: 962px) {
+  .header__bottom-inner,
+  .menu__list {
+    display: none;
+  }
+
+  .menu__btn {
+    display: block;
+  }
+
+  .menu__item + .menu__item {
+    padding-left: 0;
+  }
+
+  .menu__mobile-line-wrapper {
+    display: block;
+  }
+}
+// === / [MAX-WIDTH <= 962px] ===
+
+// === [MAX-WIDTH <= 640px] ===
+@media (max-width: 640px) {
+  .header__address {
+    display: none;
+  }
+}
+// === / [MAX-WIDTH <= 640px] ===

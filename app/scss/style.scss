@@ -64,12 +64,114 @@
 }
 
 .menu {
+  // .menu__btn
+
+  &__btn {
+    display: none;
+    border: none;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+  }
+
+  // .menu__btn-line
+
+  &__btn-line {
+    border-radius: 3px;
+    width: 34px;
+    height: 3px;
+    background-color: $main-color;
+
+    & + & {
+      margin-top: 7px;
+    }
+  }
+
   &__item {
     display: inline-block;
   }
 
   &__item + &__item {
     padding-left: 50px;
+  }
+
+  // .menu__mobile-list
+
+  &__mobile-list {
+    z-index: 10;
+    position: absolute;
+    padding: 10px 0 46px;
+    width: 243px;
+    background-color: $white;
+    box-shadow: 0 0 20px rgba($black, 0.15);
+    transform: translateX(-100%);
+    transition: $trans-regular;
+
+    &--active {
+      transform: translateX(0);
+    }
+
+    .menu__btn {
+      margin: 0 auto;
+      padding-top: 36px;
+    }
+  }
+
+  // .menu__mobile-item
+
+  &__mobile-item {
+    position: relative;
+    border-bottom: 1px solid rgba($black, 0.1);
+
+    &:nth-last-child(-n + 2) {
+      border-bottom: none;
+    }
+  }
+
+  // .menu__mobile-link
+
+  &__mobile-link {
+    display: block;
+    padding-top: 36px;
+    padding-left: 53px;
+  }
+
+  // .menu__mobile-list-icon
+
+  &__mobile-list-icon {
+    position: absolute;
+    left: 11px;
+    bottom: 0;
+  }
+
+  // .menu__mobile-address
+
+  &__mobile-address {
+    padding: 46px 0 0 53px;
+    width: 181px;
+    @extend %sf-pro-bold;
+  }
+
+  // .menu__mobile-line-wrapper
+
+  &__mobile-line-wrapper {
+    overflow-x: scroll;
+    display: none;
+    padding-left: 10px;
+    background-color: $base-color;
+    @extend %sf-pro-bold;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  // .menu__mobile-line
+
+  &__mobile-line {
+    width: 401px;
+
+    .menu__item {
+      padding: 15px 15px 15px 0;
+    }
   }
 }
 
@@ -1238,16 +1340,6 @@
     }
   }
 
-  // .product-card-tabs__content
-
-  &__content {
-  }
-
-  // .product-card-tabs__form
-
-  &__form {
-  }
-
   // .product-card-tabs__top-line
 
   &__top-line {
@@ -1282,11 +1374,6 @@
     line-height: 20px;
   }
 
-  // .product-card-tabs__list
-
-  &__list {
-  }
-
   // .product-card-tabs__list-item
 
   &__list-item {
@@ -1310,7 +1397,6 @@
   &__list-address {
     margin-right: 81px;
     width: 243px;
-    font-style: normal;
   }
 
   // .product-card-tabs__work-hours
@@ -1475,3 +1561,6 @@
   }
 }
 // === / FOOTER ===
+
+//
+@import 'media';
