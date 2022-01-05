@@ -1,5 +1,9 @@
 // === [MAX-WIDTH <= 1200px] ===
 @media (max-width: 1200px) {
+  .page-section {
+    margin-bottom: 60px;
+  }
+
   .header__bottom {
     margin-bottom: 40px;
   }
@@ -15,6 +19,10 @@
   .banner-section__slider-img {
     max-width: 600px;
     min-height: 380px;
+  }
+
+  .categories__inner {
+    justify-content: space-around;
   }
 }
 // === [MAX-WIDTH <= 1200px] ===
@@ -33,6 +41,10 @@
 
 // === [MAX-WIDTH <= 962px] ===
 @media (max-width: 962px) {
+  .page-section {
+    margin-bottom: 25px;
+  }
+
   .header__bottom-inner,
   .menu__list {
     display: none;
@@ -71,6 +83,14 @@
     margin-bottom: 25px;
     max-width: 100%;
   }
+
+  .mobile-overflow {
+    width: 1000px;
+  }
+
+  .tabs-wrapper {
+    overflow-x: scroll;
+  }
 }
 // === / [MAX-WIDTH <= 962px] ===
 
@@ -87,6 +107,30 @@
   .banner-section__slider-img {
     min-height: 200px;
   }
+
+  .search__content-btn {
+    position: absolute;
+    top: 14px;
+    right: 8px;
+    padding: 17px;
+    font-size: 0;
+    line-height: 0;
+    width: 24px;
+    height: 24px;
+    background-image: url('../images/icons/magnifying-glass.svg');
+    background-color: transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+  .search__content-input {
+    padding-right: 50px;
+    height: 50px;
+  }
+
+  .search__content-form {
+    position: relative;
+  }
 }
 // === / [MAX-WIDTH <= 640px] ===
 
@@ -94,6 +138,10 @@
 @media (max-width: 440px) {
   .banner-section__slider-img {
     min-height: 160px;
+  }
+
+  .categories__item {
+    padding: 20px 10px 16px;
   }
 }
 // === / [MAX-WIDTH <= 440px] ===
