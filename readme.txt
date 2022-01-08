@@ -7,3 +7,9 @@
 TODO:[optional] make so that when drop-down appears the angle rotates up
 
 TODO: animation for burger button
+
+TODO: [index.html] create banner for adaptive ver. 
+
+TODO: change logo for adaptive.
+
+FIXME: change dots size for sliders.

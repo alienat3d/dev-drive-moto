@@ -54,6 +54,7 @@ $(function () {
 
   // === / [catalogue.html & product-page.html] TABS ===
 
+  // === [index.html] Slick Slider JQ ===
   $('.products-slider').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -61,7 +62,48 @@ $(function () {
       '<button class="products-slider__slider-btn products-slider__slider-btnprev"><img src="images/icons/arrow-black-left.svg" alt=""></button>',
     nextArrow:
       '<button class="products-slider__slider-btn products-slider__slider-btnnext"><img src="images/icons/arrow-black-right.svg" alt=""></button>',
+    responsive: [
+      {
+        breakpoint: 1301,
+        settings: {
+          arrows: false,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 1201,
+        settings: {
+          slidesToShow: 3,
+          arrows: false,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 871,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 591,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+          dots: true,
+        },
+      },
+    ],
   });
+  // === / [index.html] Slick Slider JQ ===
+
+  // === [index.html] Footer Accordion JQ ===
+  $('.footer__title-accordion').on('click', function () {
+    $(this).next().slideToggle();
+    $(this).toggleClass('footer__title-accordion--active');
+  });
+  // === / [index.html] Footer Accordion JQ ===
 
   // === [catalogue.html] FILTERS FORM-STYLER JQ FOR DROP-DOWNS ===
   $('.filter-style').styler();

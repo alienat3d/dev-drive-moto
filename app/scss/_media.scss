@@ -1,3 +1,11 @@
+// === [MAX-WIDTH <= 1300px] ===
+@media (max-width: 1300px) {
+  .products__more {
+    margin-top: 65px;
+  }
+}
+// === / [MAX-WIDTH <= 1300px] ===
+
 // === [MAX-WIDTH <= 1200px] ===
 @media (max-width: 1200px) {
   .page-section {
@@ -24,8 +32,18 @@
   .categories__inner {
     justify-content: space-around;
   }
+
+  .banner {
+    &__image {
+      width: 100%;
+    }
+
+    .container {
+      padding: 0;
+    }
+  }
 }
-// === [MAX-WIDTH <= 1200px] ===
+// === / [MAX-WIDTH <= 1200px] ===
 
 // === [MAX-WIDTH <= 1100px] ===
 @media (max-width: 1100px) {
@@ -94,6 +112,21 @@
 }
 // === / [MAX-WIDTH <= 962px] ===
 
+// === [MAX-WIDTH <= 940px] ===
+@media (max-width: 940px) {
+  .footer {
+    &__top-inner {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    &__top-item {
+      margin-bottom: 25px;
+    }
+  }
+}
+// === / [MAX-WIDTH <= 940px] ===
+
 // === [MAX-WIDTH <= 640px] ===
 @media (max-width: 640px) {
   .header__address {
@@ -131,8 +164,91 @@
   .search__content-form {
     position: relative;
   }
+
+  .banner__image {
+    min-height: 90px;
+    object-fit: contain;
+  }
 }
 // === / [MAX-WIDTH <= 640px] ===
+
+// === [MAX-WIDTH <= 540px] ===
+@media (max-width: 540px) {
+  .footer__top-item {
+    width: 100%;
+  }
+
+  .footer__top-item.footer__top-social {
+    margin-top: 30px;
+    border-bottom: none;
+  }
+
+  .footer__top-inner {
+    justify-content: start;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .footer__bottom-link {
+    margin: 12px 0;
+  }
+
+  .footer__top-newsletter {
+    margin: 0 auto 30px;
+    border-bottom: none;
+    width: 300px;
+    text-align: center;
+  }
+
+  .footer__item-accordion {
+    margin-bottom: 0;
+    border-top: 2px solid darken($base-color, 5%);
+
+    & + & {
+      border-bottom: 2px solid darken($base-color, 5%);
+    }
+  }
+
+  .footer__top-title.footer__title-accordion {
+    padding: 15px 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #7f7f7f;
+  }
+
+  .footer__title-accordion {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 21px;
+      right: 3px;
+      background-image: url('../images/icons/angle-down.svg');
+      width: 12px;
+      height: 8px;
+      transition: $trans-fast;
+    }
+
+    &--active::after {
+      transform: rotate(180deg);
+    }
+  }
+
+  .footer__list {
+    display: none;
+    padding-bottom: 15px;
+  }
+
+  .social-list {
+    justify-content: center;
+  }
+}
+// === / [MAX-WIDTH <= 540px] ===
 
 // === [MAX-WIDTH <= 440px] ===
 @media (max-width: 440px) {

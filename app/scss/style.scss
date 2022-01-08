@@ -587,6 +587,18 @@
   &__slider-btnnext {
     right: -30px;
   }
+
+  .slick-dots {
+    bottom: -35px;
+  }
+
+  .slick-dots button {
+    background-color: $light-grey;
+  }
+
+  .slick-dots .slick-active button {
+    background-color: $accent-color;
+  }
 }
 
 .products-item {
