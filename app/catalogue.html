@@ -18,12 +18,17 @@
       <div class="container">
         <div class="header__top-inner">
           <nav class="menu">
+            <button class="menu__btn">
+              <div class="menu__btn-line"></div>
+              <div class="menu__btn-line"></div>
+              <div class="menu__btn-line"></div>
+            </button>
             <ul class="menu__list">
               <li class="menu__item">
                 <a class="menu__link" href="#">Магазины</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#">Акции</a>
+                <a class="menu__link" href="catalogue.html">Акции</a>
               </li>
               <li class="menu__item">
                 <a class="menu__link" href="#">Доставка и оплата</a>
@@ -58,6 +63,113 @@
           </div>
         </div>
       </div>
+    </div>
+    <ul class="menu__mobile-list">
+      <li class="menu__mobile-item">
+        <a class="menu__mobile-link" href="#">
+          <img class="menu__mobile-list-icon" src="images/icons/person.svg" alt="">
+          <p>Войти</p>
+        </a>
+      </li>
+      <li class="menu__mobile-item">
+        <a class="menu__mobile-link" href="#">
+          <img class="menu__mobile-list-icon" src="images/icons/person.svg" alt="">
+          <p>Регистрация</p>
+        </a>
+      </li>
+      <li class="menu__mobile-item">
+        <a class="menu__mobile-link" href="#">
+          <img class="menu__mobile-list-icon" src="images/icons/favorite.svg" alt="">
+          <p>Избранное</p>
+        </a>
+      </li>
+      <li class="menu__mobile-item">
+        <a class="menu__mobile-link" href="#">
+          <img class="menu__mobile-list-icon" src="images/icons/cart.svg" alt="">
+          <p>Корзина</p>
+        </a>
+      </li>
+      <li class="menu__mobile-item">
+        <a class="menu__mobile-link" href="#">
+          <img class="menu__mobile-list-icon" src="images/icons/house.svg" alt="">
+          <p>Магазины</p>
+        </a>
+      </li>
+      <li class="menu__mobile-item">
+        <a class="menu__mobile-link" href="#">
+          <img class="menu__mobile-list-icon" src="images/icons/percent.svg" alt="">
+          <p>Акции</p>
+        </a>
+      </li>
+      <li class="menu__mobile-item">
+        <a class="menu__mobile-link" href="#">
+          <img class="menu__mobile-list-icon" src="images/icons/delivery-box.svg" alt="">
+          <p>Доставка и оплата</p>
+        </a>
+      </li>
+      <li class="menu__mobile-item">
+        <a class="menu__mobile-link" href="#">
+          <p>Квадроциклы</p>
+        </a>
+      </li>
+      <li class="menu__mobile-item">
+        <a class="menu__mobile-link" href="#">
+          <p>Катера</p>
+        </a>
+      </li>
+      <li class="menu__mobile-item">
+        <a class="menu__mobile-link" href="#">
+          <p>Гидроциклы</p>
+        </a>
+      </li>
+      <li class="menu__mobile-item">
+        <a class="menu__mobile-link" href="#">
+          <p>Лодки</p>
+        </a>
+      </li>
+      <li class="menu__mobile-item">
+        <a class="menu__mobile-link" href="#">
+          <p>Вездеходы</p>
+        </a>
+      </li>
+      <li class="menu__mobile-item">
+        <a class="menu__mobile-link" href="#">
+          <p>Снегоходы</p>
+        </a>
+      </li>
+      <li class="menu__mobile-item">
+        <a class="menu__mobile-link" href="#">
+          <p>Двигатели</p>
+        </a>
+      </li>
+      <li class="menu__mobile-item">
+        <a class="menu__mobile-link" href="#">
+          <p>Запчасти</p>
+        </a>
+      </li>
+      <li class="menu__mobile-item">
+        <address class="menu__mobile-address">
+          Москва, ул. Науки 25
+        </address>
+      </li>
+      <button class="menu__btn">
+        <div class="menu__btn-line"></div>
+        <div class="menu__btn-line"></div>
+        <div class="menu__btn-line"></div>
+      </button>
+    </ul>
+    <div class="menu__mobile-line-wrapper">
+      <ul class="menu__mobile-line">
+        <li class="menu__item">
+          <a class="menu__link" href="#">Магазины</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="catalogue.html">Акции</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Доставка и оплата</a>
+        </li>
+      </ul>
     </div>
     <div class="header__bottom">
       <div class="container">
@@ -97,18 +209,20 @@
   <!-- === BREADCRUMBS === -->
   <div class="breadcrumbs">
     <div class="container">
-      <ul class="breadcrumbs__list">
-        <li class="breadcrumbs__list-item">
-          <a href="#">
-            Главная
-          </a>
-        </li>
-        <li class="breadcrumbs__list-item">
-          <span>
-            Гидроциклы
-          </span>
-        </li>
-      </ul>
+      <div class="breadcrumbs__inner">
+        <ul class="breadcrumbs__list mobile-overflow">
+          <li class="breadcrumbs__list-item">
+            <a href="#">
+              Главная
+            </a>
+          </li>
+          <li class="breadcrumbs__list-item">
+            <span>
+              Гидроциклы
+            </span>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
   <!-- === / BREADCRUMBS === -->
@@ -120,19 +234,21 @@
         Гидроциклы
       </h2>
       <div class="catalogue__filter">
-        <div class="catalogue__filter-items">
-          <button class="catalogue__button">
-            Полноприводные
-          </button>
-          <button class="catalogue__button">
-            от 5000
-          </button>
-          <button class="catalogue__button">
-            BRP
-          </button>
-          <button class="catalogue__button">
-            Ещё
-          </button>
+        <div class="catalogue__filter-inner">
+          <div class="catalogue__filter-items  mobile-overflow">
+            <button class="catalogue__button">
+              Полноприводные
+            </button>
+            <button class="catalogue__button">
+              от 5000
+            </button>
+            <button class="catalogue__button">
+              BRP
+            </button>
+            <button class="catalogue__button">
+              Ещё
+            </button>
+          </div>
         </div>
         <div class="catalogue__filter-buttons">
           <select class="filter-style select-item">
@@ -158,12 +274,16 @@
               alt="иконка кнопки фильтр список">
           </button>
         </div>
-      </div> <!-- /.catalogue__filter -->
+      </div>
+      <!-- /.catalogue__filter -->
 
+      <!-- === ASIDE-FILTER === -->
       <div class="catalogue__inner">
-        <!-- === ASIDE-FILTER === -->
-        <aside class="catalogue__inner-aside aside-filter">
-          <div class="tabs-wrapper aside-filter">
+        <div class="aside__btn">
+          Фильтр
+        </div>
+        <aside class="catalogue__inner-aside">
+          <div class="tabs-wrapper tabs-wrapper--no-scroll aside-filter">
             <div class="tabs aside-filter__tabs">
               <a class="tab aside-filter__tab tab--active" href="#filter-1">
                 <span>Параметры</span>
@@ -682,10 +802,11 @@
                 </a>
               </li>
             </ul>
-          </div>
-        </div>
+          </div> <!-- /.pagination -->
+
+        </div> <!-- /.catalogue__inner-list -->
       </div> <!-- /.catalogue__inner -->
-    </div>
+    </div> <!-- /.container -->
   </section>
   <!-- === / CATALOGUE === -->
 
@@ -706,8 +827,8 @@
               </button>
             </form>
           </div>
-          <div class="footer__top-item">
-            <h6 class="footer__top-title">
+          <div class="footer__top-item footer__item-accordion">
+            <h6 class="footer__top-title footer__title-accordion">
               Информация
             </h6>
             <ul class="footer__list">
@@ -733,8 +854,8 @@
               </li>
             </ul>
           </div>
-          <div class="footer__top-item">
-            <h6 class="footer__top-title">
+          <div class="footer__top-item footer__item-accordion">
+            <h6 class="footer__top-title footer__title-accordion">
               Интернет-магазин
             </h6>
             <ul class="footer__list">
@@ -861,7 +982,8 @@
 
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js">
+  </script>
   <script src="js/vendor/jquery.formstyler.min.js"></script>
 
   <script src="js/main.min.js"></script>

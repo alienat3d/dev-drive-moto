@@ -114,6 +114,12 @@ $(function () {
   });
   // === / [catalogue.html] FILTERS STYLER FOR DROP-DOWNS ===
 
+  // === [catalogue.html] FILTER MOBILE SLIDE-DOWN ===
+  $('.aside__btn').on('click', function () {
+    $(this).next().slideToggle();
+  });
+  // === / [catalogue.html] FILTER MOBILE SLIDE-DOWN ===
+
   // === [catalogue.html] FILTERS ION.RANGE-SLIDER JQ ===
   $('.js-range-slider').ionRangeSlider({
     type: 'double',
