@@ -452,6 +452,7 @@
     border: none;
     padding: 17px 41px;
     margin-left: -3px;
+    cursor: pointer;
   }
 }
 // === / SEARCH ===
@@ -1322,6 +1323,10 @@
     background-color: $accent-color;
     cursor: pointer;
   }
+
+  &__btn--mobile {
+    display: none;
+  }
 }
 // === / PRODUCT-CARD ===
 
@@ -1557,6 +1562,10 @@
     font-size: 10px;
     line-height: 12px;
     color: #48494d;
+  }
+
+  &__title-accordion {
+    pointer-events: none;
   }
 }
 
