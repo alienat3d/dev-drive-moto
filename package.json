@@ -1,25 +1,36 @@
 {
-  "name": "new-start-gulp",
+  "name": "drive-moto",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alienat3d/drive-moto.git"
+  },
   "author": "Al Tsaplin",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alienat3d/drive-moto/issues"
+  },
+  "homepage": "https://github.com/alienat3d/drive-moto#readme",
   "devDependencies": {
-    "browser-sync": "^2.26.14",
-    "del": "^6.0.0",
+    "browser-sync": "^3.0.2",
+    "del": "^6.1.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-concat": "^2.6.1",
-    "gulp-sass": "^4.1.0",
+    "gulp-imagemin": "7.1",
+    "gulp-sass": "^5.1.0",
     "gulp-uglify": "^3.0.2",
-    "jquery": "^3.6.0"
-  },
-  "dependencies": {
-    "gulp-imagemin": "^7.1.0",
-    "slick-slider": "^1.8.2"
+    "ion-rangeslider": "^2.3.1",
+    "jquery": "^3.7.1",
+    "jquery-form-styler": "^2.0.2",
+    "normalize.css": "^8.0.1",
+    "rateyo": "^3.0.0-alpha.2",
+    "sass": "^1.69.7",
+    "slick-carousel": "^1.8.1"
   }
 }

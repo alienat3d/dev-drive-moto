@@ -13,3 +13,5 @@ TODO: [index.html] create banner for adaptive ver.
 TODO: change logo for adaptive.
 
 FIXME: change dots size for sliders.
+
+FIXME: [.products-slider] пофиксить тени у карточек слайдера.
